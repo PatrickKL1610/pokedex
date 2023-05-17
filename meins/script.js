@@ -38,7 +38,8 @@ function renderMiniCarts(currentPokemon) {
         <img src="${currentPokemon['sprites']['other']['official-artwork']['front_default']}">
         <div class="pokeType" id="pokeType${currentPokemon['id']}">
     </div>
-    `
+    `;
+
 }
 
 // load 20 more Pokemons
