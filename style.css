@@ -1,0 +1,232 @@
+body {
+    background-color: rgba(33, 37, 41, 0.9) !important;
+}
+
+h3::first-letter {
+    text-transform: capitalize;
+}
+
+h4::first-letter {
+    text-transform: capitalize;
+}
+
+#statName::first-letter {
+    text-transform: capitalize;
+}
+
+.navbar-img {
+    height: 50px;
+    width: 50px;
+}
+
+.logoheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logoheader a {
+    margin-left: 16px;
+}
+
+.d-none {
+    display: none;
+}
+
+.contentContainer {
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.contentContainer h1 {
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000;
+}
+
+.pokemonMiniCard {
+    height: 300px;
+    width: 300px;
+    border-radius: 100px;
+    margin: 8px;
+    cursor: pointer;
+    transition: 125ms;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.2);
+}
+
+.pokemonMiniCard:hover {
+    box-shadow: 2px 2px 10px 3px rgba(255, 255, 255, 0.4);
+    transition: all 125ms ease-in-out;
+}
+
+.pokemonMiniCard img {
+    height: 200px;
+    z-index: 2;
+    transition: 125ms;
+}
+
+.pokemonMiniCard img:hover {
+    transform: scale(1.15);
+}
+
+.pokemonMiniCard h3 {
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.fullscreenView {
+    position: absolute;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.3);
+    min-height: 100vh;
+    min-width: 100vw;
+    backdrop-filter: blur(5px);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fullscreenContainer {
+    position: relative;
+    background-color: white;
+    height: 700px;
+    width: 400px;
+    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    cursor: default;
+}
+
+.pokePic {
+    height: 250px;
+    position: absolute;
+    top: 27%;
+    margin: -125px;
+    left: 65%;
+    right: 35%;
+}
+
+.fullscreenBg {
+    height: 350px;
+}
+
+.fullscreenBg h3 {
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-size: 40px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.fullscreenBg h4 {
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-size: 20px;
+    text-align: center;
+}
+
+.fullscreenBgbottom {
+    background-color: white;
+    height: 30px;
+    margin-top: -30px;
+    border-radius: 30px 30px 0 0;
+}
+
+.boxForType {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+.boxForType h4 {
+    font-size: 20px;
+    margin: 0;
+    padding: 7px;
+}
+
+.typeBox {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.closeTag {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    z-index: 200;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    filter: invert();
+}
+
+.cardMenuContend {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    overflow: auto;
+}
+
+.cardMenu {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.arrowsContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.arrowsContainer img {
+    position: unset;
+    height: 35px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.cardMenuText {
+    font-weight: bold;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.404);
+}
+
+.isActiv {
+    color: black;
+}
+
+@media (max-width: 483px) {
+    .container-fluid {
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .logoheader {
+        padding-bottom: 10px;
+    }
+}
