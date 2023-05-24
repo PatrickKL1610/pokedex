@@ -2,11 +2,6 @@ let load = 30;
 let searchedPokemon = [];
 let loadedPokemons = 0;
 
-
-function init() {
-    loadPokemons();
-}
-
 async function loadPokemons() {
     let url = `https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0`;
     let response = await fetch(url);
