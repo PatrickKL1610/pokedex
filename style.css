@@ -130,11 +130,7 @@ h4::first-letter {
 
 .pokePic {
     height: 250px;
-    position: absolute;
-    top: 27%;
-    margin: -125px;
-    left: 65%;
-    right: 35%;
+
 }
 
 .fullscreenBg {
@@ -239,6 +235,11 @@ h4::first-letter {
     color: black;
 }
 
+.contentHeader {
+    display: flex;
+    justify-content: space-around;
+}
+
 @media (max-width: 483px) {
     .container-fluid {
         display: flex !important;
@@ -250,16 +251,14 @@ h4::first-letter {
     }
 
     .fullscreenContainer {
-        width: 100%;
-        height: none;
+        width: 100vw;
+        height: 100vh;
         border-radius: 0;
     }
 
     .pokePic {
         height: 150px;
-        left: 80%;
-        right: 20%;
-        top: 30%;
+
     }
 
     .fullscreenBg h3 {

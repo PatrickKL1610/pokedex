@@ -14,10 +14,14 @@ function renderFullscreen(currentPokemon) {
             <img src="img/close.png" class="closeTag" onclick="closeFullScreen()">
             <div class="fullscreenBg" id="fullscreenBg">            
                 <h3> ${currentPokemon['name']}</h3>
-                <div class="typeBox" id="typeBox"></div>
+                <div class="contentHeader">
+                    <div class="typeBox" id="typeBox"></div>
+                    <div>
+                        <img class="pokePic" src="${currentPokemon['sprites']['other']['official-artwork']['front_default']}">
+                    </div>
+                </div>
             </div>
             <div class="fullscreenBgbottom"></div>
-            <img class="pokePic" src="${currentPokemon['sprites']['other']['official-artwork']['front_default']}">
        </div> 
    `
 }
