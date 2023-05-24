@@ -248,4 +248,32 @@ h4::first-letter {
     .logoheader {
         padding-bottom: 10px;
     }
+
+    .fullscreenContainer {
+        width: 100%;
+        height: none;
+        border-radius: 0;
+    }
+
+    .pokePic {
+        height: 150px;
+        left: 80%;
+        right: 20%;
+        top: 30%;
+    }
+
+    .fullscreenBg h3 {
+        border-radius: 0;
+        padding-top: 15px;
+    }
+
+    .fullscreenBg {
+        border-radius: 0;
+        height: 280px;
+    }
+
+    .boxForType h4 {
+        font-size: 15px;
+    }
+
 }
