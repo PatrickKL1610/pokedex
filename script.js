@@ -151,9 +151,13 @@ function setIsActiv(isActiv) {
 
 function getSearchInput() {
     let search = document.getElementById('searchInput').value;
-    let searchValue = search.toLocaleLowerCase();
-    document.getElementById('searchInput').value = '';
-    filterPokemon(searchValue);
+    if (search.length == 0) {
+        alert('Please enter a value');
+    } else {
+        let searchValue = search.toLocaleLowerCase();
+        document.getElementById('searchInput').value = '';
+        filterPokemon(searchValue);
+    }
 }
 
 async function filterPokemon(searchValue) {
